@@ -1,0 +1,17 @@
+{
+  "name": "contractor-photo-to-quote",
+  "version": "0.1.0",
+  "description": "Turns job-site and equipment photos into standardized trade estimates and quotes in Jobber or QuickBooks with multi-tier Good/Better/Best options in 5 minutes.",
+  "type": "module",
+  "license": "MIT",
+  "peerDependencies": {
+    "@vellumai/plugin-api": "^0.10.0"
+  },
+  "dependencies": {
+    "preact": "10.29.8"
+  },
+  "scripts": {
+    "build:app": "bun build apps/photo-estimator/src/main.tsx --outdir apps/photo-estimator/dist --target browser --format esm --jsx-factory=h --jsx-fragment=Fragment --jsx-import-source=preact"
+  },
+  "vellum": {}
+}
